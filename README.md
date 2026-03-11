@@ -1,39 +1,25 @@
-# task-3-
+# User Management System (PHP & MySQL)
 
-# Task Management System (PHP & MySQL)
-
-This project was developed as **Task-4 for the ApexPlanet Full Stack Web Development Internship**.
-It is a **Task Management System** that allows users to manage tasks efficiently with authentication, CRUD operations, and an admin panel.
+This project was developed as **Task-3 for the ApexPlanet Full Stack Web Development Internship**.
+It is a simple **User Management System** that demonstrates backend development using **PHP and MySQL** with authentication and CRUD operations.
 
 ---
 
 ## 📌 Project Overview
 
-The Task Management System is a web application where users can create and manage tasks.
-It includes **user authentication, role-based access (Admin/User), CRUD functionality, and a dashboard to track tasks**.
-
-The system demonstrates **full-stack development concepts using PHP and MySQL**.
+The User Management System allows users to **register, log in, and manage user records** through a web interface.
+It demonstrates **core backend development concepts**, including database connectivity, session management, and secure authentication.
 
 ---
 
 ## 🚀 Features
 
-### 👤 User Features
-
 * User Registration
-* Secure Login & Logout
-* Session-based authentication
-* Create new tasks
-* View personal tasks
-* Update existing tasks
-* Delete tasks
-
-### 👑 Admin Features
-
-* Admin Dashboard
-* View all registered users
-* Manage all tasks
-* View system statistics (users & tasks)
+* User Login Authentication
+* Password Hashing for secure storage
+* Session-based Login & Logout
+* CRUD Operations (Create, Read, Update, Delete Users)
+* Secure database queries using prepared statements
 
 ---
 
@@ -41,27 +27,25 @@ The system demonstrates **full-stack development concepts using PHP and MySQL**.
 
 * **PHP** – Backend development
 * **MySQL** – Database management
-* **HTML5** – Web page structure
+* **HTML5** – Structure of web pages
 * **CSS3** – Styling and layout
 
 ---
 
 ## 📂 Project Structure
 
-```
-task-management-system/
+```id="4t9yyv"
+user-management-system/
 │
-├── db.php
-├── register.php
-├── login.php
-├── logout.php
-├── dashboard.php
-├── admin.php
-├── add_task.php
-├── edit_task.php
-├── delete_task.php
-├── style.css
-├── database.sql
+├── db.php            # Database connection
+├── register.php      # User registration page
+├── login.php         # User login page
+├── dashboard.php     # Dashboard showing users
+├── edit.php          # Update user details
+├── delete.php        # Delete user record
+├── logout.php        # Logout functionality
+├── database.sql      # Database structure
+├── style.css         # Basic styling
 └── README.md
 ```
 
@@ -71,7 +55,7 @@ task-management-system/
 
 ### 1️⃣ Install XAMPP
 
-Download and install **XAMPP** and start the following services:
+Download and install **XAMPP** and start:
 
 * Apache
 * MySQL
@@ -80,39 +64,45 @@ Download and install **XAMPP** and start the following services:
 
 ### 2️⃣ Move Project Folder
 
-Place the project inside the **htdocs** folder:
+Place the project folder inside:
 
+```id="m2e0lf"
+C:\xampp\htdocs\
 ```
-C:\xampp\htdocs\task-management-system
+
+Example:
+
+```id="h2lup3"
+C:\xampp\htdocs\user-management-system
 ```
 
 ---
 
 ### 3️⃣ Create Database
 
-Open:
+Open in browser:
 
-```
+```id="u1ejw2"
 http://localhost/phpmyadmin
 ```
 
 Create database:
 
-```
-task4_db
+```id="f3c71h"
+task3_db
 ```
 
 ---
 
-### 4️⃣ Import Database File
+### 4️⃣ Import SQL File
 
-Import the SQL file:
+Import the file:
 
-```
+```id="uynb7j"
 database.sql
 ```
 
-This will create the required tables for the system.
+This will create the **users table** required for the project.
 
 ---
 
@@ -120,8 +110,8 @@ This will create the required tables for the system.
 
 Open in browser:
 
-```
-http://localhost/task-management-system/login.php
+```id="c24d3c"
+http://localhost/user-management-system/register.php
 ```
 
 ---
@@ -131,8 +121,9 @@ http://localhost/task-management-system/login.php
 1. User registers with name, email, and password.
 2. Password is securely stored using **PHP password hashing**.
 3. User logs in using registered credentials.
-4. After login, users can manage their tasks through the dashboard.
-5. Admin users can access the **Admin Panel** to view all users and tasks.
+4. After login, a dashboard displays all users.
+5. Users can update or delete records using CRUD operations.
+6. Session management keeps users logged in until logout.
 
 ---
 
@@ -141,7 +132,7 @@ http://localhost/task-management-system/login.php
 This project was developed for:
 
 **ApexPlanet Software Pvt. Ltd.**
-Full Stack Web Development Internship – **Task-4**
+Full Stack Web Development Internship – **Task-3**
 
 ---
 
